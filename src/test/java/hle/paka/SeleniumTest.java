@@ -35,7 +35,6 @@ public class SeleniumTest
       
       button2.click();
       sleep();
-      sleep();
       assertEquals("Selenium Start","Selenium Start");
   }
 
