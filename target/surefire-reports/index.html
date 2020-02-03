@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-hle_paka_SeleniumTest">
-              <span class="suite-name border-skipped">hle.paka.SeleniumTest</span>
+              <span class="suite-name border-passed">hle.paka.SeleniumTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-hle_paka_SeleniumTest" class="hide-methods skipped suite-hle_paka_SeleniumTest"> (hide)</a> <!-- hide-methods skipped suite-hle_paka_SeleniumTest -->
-                      <a href="#" panel-name="suite-hle_paka_SeleniumTest" class="show-methods skipped suite-hle_paka_SeleniumTest"> (show)</a> <!-- show-methods skipped suite-hle_paka_SeleniumTest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-hle_paka_SeleniumTest" class="hide-methods passed suite-hle_paka_SeleniumTest"> (hide)</a> <!-- hide-methods passed suite-hle_paka_SeleniumTest -->
+                      <a href="#" panel-name="suite-hle_paka_SeleniumTest" class="show-methods passed suite-hle_paka_SeleniumTest"> (show)</a> <!-- show-methods passed suite-hle_paka_SeleniumTest -->
                     </span>
-                    <div class="method-list-content skipped suite-hle_paka_SeleniumTest">
+                    <div class="method-list-content passed suite-hle_paka_SeleniumTest">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-hle_paka_SeleniumTest" title="hle.paka.SeleniumTest" hash-for-method="typingIntoWebElementTest">typingIntoWebElementTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-hle_paka_SeleniumTest -->
+                    </div> <!-- method-list-content passed suite-hle_paka_SeleniumTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-hle_paka_SeleniumTest" class="panel hle_paka_SeleniumTest">
-          <div class="suite-hle_paka_SeleniumTest-class-skipped">
+          <div class="suite-hle_paka_SeleniumTest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">hle.paka.SeleniumTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,42 +128,10 @@
                   <a name="typingIntoWebElementTest">
                   </a> <!-- typingIntoWebElementTest -->
                   <span class="method-name">typingIntoWebElementTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 133 milliseconds
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;L806452&apos;, ip: &apos;10.8.180.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: driver.version: InternetExplorerDriver
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:213)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:150)
-	at hle.paka.SeleniumTest.beforeTest(SeleniumTest.java:21)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 44 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-hle_paka_SeleniumTest-class-skipped -->
+          </div> <!-- suite-hle_paka_SeleniumTest-class-passed -->
         </div> <!-- panel hle_paka_SeleniumTest -->
         <div panel-name="test-xml-hle_paka_SeleniumTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -219,12 +187,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'typingIntoWebElementTest')
 data.setCell(0, 2, 'hle.paka.SeleniumTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 4764);
 window.suiteTableData['hle_paka_SeleniumTest']= { tableData: data, tableDiv: 'times-div-hle_paka_SeleniumTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-hle_paka_SeleniumTest">
               </div> <!-- times-div-hle_paka_SeleniumTest -->
             </div> <!-- times-div -->
@@ -252,18 +220,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">hle.paka.SeleniumTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">typingIntoWebElementTest</span>
-                <span class="method-start">2540 ms</span>
+                <span class="method-start">6555 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">2544 ms</span>
+                <span class="method-start">11326 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

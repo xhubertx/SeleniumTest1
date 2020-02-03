@@ -1,24 +1,32 @@
 package hle.paka;
 
+import static org.testng.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import static org.testng.Assert.assertEquals;
 
 
 public class SeleniumTest
 {
-	
+
   private WebDriver driver;
 
-  @BeforeMethod
+  @SuppressWarnings("deprecation")
+@BeforeMethod
   public void beforeTest(){
       System.setProperty("webdriver.ie.driver", "D:/HLE_IntelliJ/driver/IEdriver/IEDriverServer.exe");
-      driver = new InternetExplorerDriver();
+      DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+      caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+      driver = new InternetExplorerDriver(caps);
+      driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
       driver.navigate().to("https://zt002dcl.centrala.bzwbk/web/guest/home");
   }
 
