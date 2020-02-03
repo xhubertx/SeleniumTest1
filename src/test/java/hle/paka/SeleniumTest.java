@@ -19,7 +19,8 @@ public class SeleniumTest
 
   private WebDriver driver;
 
-  @SuppressWarnings("deprecation")
+  
+@SuppressWarnings("deprecation")
 @BeforeMethod
   public void beforeTest(){
       System.setProperty("webdriver.ie.driver", "D:/HLE_IntelliJ/driver/IEdriver/IEDriverServer.exe");
