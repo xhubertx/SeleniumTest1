@@ -40,7 +40,6 @@ public class SeleniumTest
       //WebElement button =  driver.findElement(By.className("button"));
       //button.click();
       WebElement button2 = driver.findElement(By.xpath("//input[@class='button' and @type='button']"));
-      System.out.println(button2.getTagName());
       
       button2.click();
       sleep();
